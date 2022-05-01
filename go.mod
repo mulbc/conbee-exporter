@@ -3,8 +3,10 @@ module github.com/mulbc/conbee-exporter
 go 1.18
 
 require (
+	github.com/joeshaw/iso8601 v0.0.0-20140327141645-861d1ce636d0
 	github.com/prometheus/client_golang v1.12.1
 	github.com/sirupsen/logrus v1.8.1
+	golang.org/x/exp v0.0.0-20220428152302-39d4317da171
 )
 
 require (

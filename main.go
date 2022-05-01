@@ -138,7 +138,7 @@ func main() {
 			log.Fatal("No conbees found, try manually specifying the URI with -conbee-uri")
 		}
 		log.Infof("Using conbee \"%s\" at %s:%d for this run", detectedResults[0].Name, detectedResults[0].Internalipaddress, detectedResults[0].Internalport)
-		*conbeeURI = fmt.Sprintf("%s:%d", detectedResults[0].Internalipaddress, detectedResults[0].Internalport)
+		*conbeeURI = fmt.Sprintf("http://%s:%d", detectedResults[0].Internalipaddress, detectedResults[0].Internalport)
 	}
 
 	recordMetrics()

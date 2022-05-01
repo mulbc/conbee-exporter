@@ -3,3 +3,7 @@ Description=Conbee II Prometheus exporter
 
 [Service]
 ExecStart=/usr/local/bin/conbee-exporter
+Environment="CONBEE_API_KEY=pGNqduRFkB4K9C2vijOmUDa2kPtUhArN"
+
+[Install]
+WantedBy=multi-user.target
